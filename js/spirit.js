@@ -21,6 +21,7 @@
     // Creating a LatLngBounds object
     var bounds = new google.maps.LatLngBounds();
     
+    var infowindow;
     
     var addStations = function(idx, value) {
    		var lng = value.geometry.coordinates[0];
@@ -69,32 +70,52 @@
 		var siteNumElem = document.createElement('span');
    		infoDiv.appendChild(siteNumElem);
    		siteNumElem.setAttribute("class", "siteNum");
-   		siteNumElem.innerHTML = '<b>Site Number: </b>' + siteNum;
+   		siteNumElem.innerHTML = '<b>Site Number: </b>' + siteNum + "<br/>";
 
    		var zoomInLink = document.createElement('a');
    		zoomInLink.innerHTML = 'zoom in';
       	zoomInLink.href = '#';
       	siteNameElem.appendChild(zoomInLink);
       	
-    	zoomInLink.onclick = function() {
+      	var doZoomIn = function() {
         	map.setCenter(marker.getPosition());
             map.setZoom(15);
+            zoomInLink.innerHTML = 'zoom out';
+            zoomInLink.onclick = doZoomOut;
             return false;
     	};
+    	
+      	var doZoomOut = function() {
+        	map.setCenter(marker.getPosition());
+            map.fitBounds(bounds);
+            zoomInLink.innerHTML = 'zoom in';
+            zoomInLink.onclick = doZoomIn;
+            return false;
+    	};
+
+    	zoomInLink.onclick = doZoomIn;
    		
-   		//var content = '<div>' +
-   		///	'<span class="siteName">' + name + ' <a href="#">Zoom In</a></span><br/>' +
-   			//'<span class="address">' + formattedAddress + '</span><br/><br/>' +
-   			//'<span class="licensee"><b>Licensee: </b>' + licensee + '</span><br/>' +
-   			//'<span class="siteNum"><b>Site Number: </b>' + siteNum + '</span><br/>' +
-   			//'</div>';
-   		
-   		var infowindow = new google.maps.InfoWindow({});
-   		infowindow.setContent(infoDiv);
-   		
-   		google.maps.event.addListener(marker, 'click', function() {
-   			infowindow.open(map, marker);
-   		});
+   		// Wrapping the event listener inside an anonymous function 
+      // that we immediately invoke and passes the variable i to.
+      (function(infoDiv, marker) {
+
+        // Creating the event listener. It now has access to the values of
+        // i and marker as they were during its creation
+        google.maps.event.addListener(marker, 'click', function() {
+          
+          if (!infowindow) {
+            infowindow = new google.maps.InfoWindow();
+          }
+          
+          // Setting the content of the InfoWindow
+          infowindow.setContent(infoDiv);
+
+          // Tying the InfoWindow to the marker 
+          infowindow.open(map, marker);
+          
+        });
+
+      })(infoDiv, marker);
    	}
    	
     $.get("data/spirit.geojson", function(myJSONtext) {
@@ -102,7 +123,6 @@
    		jQuery.each(stations.features, addStations);
    	});
    	
-   	// Adjusting the map to new bounding box
-    map.fitBounds(bounds)
+	map.fitBounds(bounds);
   }
 })();
