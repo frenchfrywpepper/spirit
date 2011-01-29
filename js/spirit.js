@@ -46,6 +46,11 @@
    		// i hate all this element logic, clean it up
    		var infoDiv = document.createElement('div');
    		
+   		var logo = document.createElement('img');
+   		infoDiv.appendChild(logo);
+   		logo.setAttribute('src', 'img/spiritlogo.jpg');
+   		logo.setAttribute('class', 'align-left');
+   		
    		var siteNameElem = document.createElement('span');
    		infoDiv.appendChild(siteNameElem);
    		siteNameElem.setAttribute("class", "siteName");
