@@ -43,6 +43,7 @@
    		// Extending the bounds object with each LatLng
         bounds.extend(latLng);
    			
+   		// i hate all this element logic, clean it up
    		var infoDiv = document.createElement('div');
    		
    		var siteNameElem = document.createElement('span');
