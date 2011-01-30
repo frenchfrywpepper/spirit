@@ -20,12 +20,17 @@ a:hover  {
 	text-decoration: underline; 
 }
     
-.align-left { 
+#logo { 
 	float:left; 
-	margin: 0 15px 15px 0; 
+	margin: 0 10px 10px 0; 
 }
 
-.licensee, .siteNum {
-	clear: both;
-	float: left;
+#siteName, .label {
+	font-weight: bold;
+}
+#siteName,#street,#cityState {
+	white-space: nowrap;
+}
+#info {
+	visibility: hidden;
 }

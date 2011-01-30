@@ -1,6 +1,14 @@
 (function() {
   window.onload = function() {
-	  
+
+   		var infoDiv = document.getElementById('info');
+      	var zoomInLink = document.getElementById('zoomInLink');   	
+		var siteNameElem = document.getElementById('siteName');
+		var streetElem = document.getElementById('street');
+		var cityStateElem = document.getElementById('cityState');
+		var licenseeElem = document.getElementById('licensee');
+		var siteNumElem = document.getElementById('siteNum');
+  
 	// Creating a reference to the mapDiv
     var mapDiv = document.getElementById('map');
     
@@ -23,11 +31,30 @@
     
     var infowindow;
     
+    var doZoomIn = function() {
+        	map.setCenter(marker.getPosition());
+            map.setZoom(15);
+            zoomInLink.innerHTML = 'view all stations';
+            zoomInLink.onclick = doZoomOut;
+            return false;
+    	};
+    	
+      	var doZoomOut = function() {
+        	map.setCenter(marker.getPosition());
+            map.fitBounds(bounds);
+            zoomInLink.innerHTML = 'zoom to station';
+            zoomInLink.onclick = doZoomIn;
+            return false;
+    	};
     var addStations = function(idx, value) {
    		var lng = value.geometry.coordinates[0];
    		var lat = value.geometry.coordinates[1];
    		var name = value.properties.siteName;
    		var formattedAddress = value.properties.formattedAddress;
+   		var address = value.properties.address;
+   		var city = value.properties.city;
+   		var state = value.properties.state;
+   		var zip = value.properties.zip;
    		var licensee = value.properties.licensee;
    		var siteNum = value.properties.num;
    		
@@ -42,62 +69,8 @@
    		
    		// Extending the bounds object with each LatLng
         bounds.extend(latLng);
-   			
-   		// i hate all this element logic, clean it up
-   		var infoDiv = document.createElement('div');
-   		
-   		var logo = document.createElement('img');
-   		infoDiv.appendChild(logo);
-   		logo.setAttribute('src', 'img/spiritlogo.jpg');
-   		logo.setAttribute('class', 'align-left');
-   		
-   		var siteNameElem = document.createElement('span');
-   		infoDiv.appendChild(siteNameElem);
-   		siteNameElem.setAttribute("class", "siteName");
-   		siteNameElem.innerHTML = '<b>' + name + "</b>&nbsp;";
-   		
-   		infoDiv.appendChild(document.createElement('br'));
-   		
-   		var addressElem = document.createElement('span');
-   		infoDiv.appendChild(addressElem);
-   		addressElem.setAttribute("class", "address");
-   		addressElem.innerHTML = formattedAddress;
-   		
-   		infoDiv.appendChild(document.createElement('br'));
-   		infoDiv.appendChild(document.createElement('br'));
-   		
-   		var licenseeElem = document.createElement('span');
-   		infoDiv.appendChild(licenseeElem);
-   		licenseeElem.setAttribute("class", "licensee");
-   		licenseeElem.innerHTML = '<b>Licensee: </b>' + licensee;
 
-		infoDiv.appendChild(document.createElement('br'));
-   		
-		var siteNumElem = document.createElement('span');
-   		infoDiv.appendChild(siteNumElem);
-   		siteNumElem.setAttribute("class", "siteNum");
-   		siteNumElem.innerHTML = '<b>Site Number: </b>' + siteNum + "<br/>";
-
-   		var zoomInLink = document.createElement('a');
-   		zoomInLink.innerHTML = 'zoom in';
-      	zoomInLink.href = '#';
-      	siteNameElem.appendChild(zoomInLink);
       	
-      	var doZoomIn = function() {
-        	map.setCenter(marker.getPosition());
-            map.setZoom(15);
-            zoomInLink.innerHTML = 'zoom out';
-            zoomInLink.onclick = doZoomOut;
-            return false;
-    	};
-    	
-      	var doZoomOut = function() {
-        	map.setCenter(marker.getPosition());
-            map.fitBounds(bounds);
-            zoomInLink.innerHTML = 'zoom in';
-            zoomInLink.onclick = doZoomIn;
-            return false;
-    	};
 
     	zoomInLink.onclick = doZoomIn;
    		
@@ -111,14 +84,20 @@
           
           if (!infowindow) {
             infowindow = new google.maps.InfoWindow();
-          }
+          }          
+          
+          			siteNameElem.innerHTML = name;
+   		streetElem.innerHTML = address;
+   		cityStateElem.innerHTML = city + ', ' + state + ' ' + zip;
+   		licenseeElem.innerHTML = licensee;
+   		siteNumElem.innerHTML = siteNum;	
           
           // Setting the content of the InfoWindow
           infowindow.setContent(infoDiv);
 
           // Tying the InfoWindow to the marker 
           infowindow.open(map, marker);
-          
+          infoDiv.style.visibility = 'visible';
         });
 
       })(infoDiv, marker);
