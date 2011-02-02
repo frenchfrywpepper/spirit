@@ -28,9 +28,20 @@ a:hover  {
 #siteName, .label {
 	font-weight: bold;
 }
+
 #siteName,#street,#cityState {
 	white-space: nowrap;
 }
+
 #info {
 	visibility: hidden;
+}
+
+#nameAddress {
+	white-space: nowrap;
+}
+
+#addtlInfo {
+	clear: both;
+	white-space: nowrap;
 }
