@@ -39,24 +39,7 @@
    			var siteNum = value.properties.num;
    			var latLng = new google.maps.LatLng(lat, lng);
    		
-   			var doZoomIn = function() {
-				map.setCenter(marker.getPosition());
-            	map.setZoom(15);
-            	zoomInLink.innerHTML = 'view all stations';
-            	zoomInLink.onclick = doZoomOut;
-            	google.maps.event.trigger(marker, 'click');
-            	return false;
-    		};
-    	
-      		var doZoomOut = function() {
-        		map.setCenter(marker.getPosition());
-            	map.fitBounds(bounds);
-            	zoomInLink.innerHTML = 'zoom to station';
-            	zoomInLink.onclick = doZoomIn;
-            	return false;
-    		};
-   			
-   			var marker = new google.maps.Marker({
+   		   	var marker = new google.maps.Marker({
    				position: latLng,
    				map: map,
    				title: name,
@@ -64,16 +47,32 @@
    			});
    		
    			bounds.extend(latLng);      	
-
-    		zoomInLink.onclick = doZoomIn;
       		
       		(function(infoDiv, marker) {
+      			var doZoomIn = function() {
+					map.setCenter(marker.getPosition());
+            		map.setZoom(15);
+            		zoomInLink.innerHTML = 'view all stations';
+            		google.maps.event.trigger(marker, 'click');
+            		zoomInLink.onclick = doZoomOut;
+            		return false;
+    			};
+    	
+      			var doZoomOut = function() {
+        			map.setCenter(marker.getPosition());
+            		map.fitBounds(bounds);
+            		zoomInLink.innerHTML = 'zoom to station';
+            		zoomInLink.onclick = doZoomIn;
+            		return false;
+    			};
+        		
         		google.maps.event.addListener(marker, 'click', function() {
-          
           			if (!infowindow) {
             			infowindow = new google.maps.InfoWindow();
           			}          
-          
+          			
+          			zoomInLink.onclick = doZoomIn;
+          			          			
           			siteNameElem.innerHTML = name;
    					streetElem.innerHTML = address;
    					cityStateElem.innerHTML = city + ', ' + state + ' ' + zip;
