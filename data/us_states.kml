@@ -4,23 +4,24 @@
   <Document>
     <name><![CDATA[US States]]></name>
     <open>1</open>
-    <Style id="Style_5">
-      <IconStyle>
-        <scale>0.4</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <color>9900ffff</color>
-        <scale>1</scale>
-      </LabelStyle>
+    <Style id="blue_style">
       <LineStyle>
-        <color>990000ff</color>
+        <color>FF8C857C</color>
         <width>2</width>
       </LineStyle>
       <PolyStyle>
-        <color>997f7fff</color>
+        <color>8FC57300</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="red_style">
+      <LineStyle>
+        <color>FF8C857C</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>8F353aed</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
@@ -29,74 +30,13 @@
     <Placemark id="pm251">
       <name><![CDATA[Hawaii (1959)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    6380.614</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Hawaii</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>15</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Pacific</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>HI</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1211537</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1211960</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         190</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          83</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          50</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Hawaii</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Aug. 21 1959</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1959</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1820</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1959</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g866">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--156.326917860547,20.2401578536914</coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g867">
             <altitudeMode>clampToGround</altitudeMode>
@@ -282,75 +222,13 @@
     <Placemark id="pm252">
       <name><![CDATA[Washington (1889)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   67290.061</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Washington</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>53</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Pacific</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>WA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     5894121</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     5984144</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          88</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          92</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          42</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Washington</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Nov. 11 1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1811</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1889</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g874">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--120.428027450366,47.3767619529735 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g875">
             <altitudeMode>clampToGround</altitudeMode>
@@ -661,75 +539,13 @@
     <Placemark id="pm253">
       <name><![CDATA[Montana (1889)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  147244.653</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Montana</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>30</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MT</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      902195</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      908325</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>           6</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>         100</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          41</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Montana</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Nov. 8 1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1809</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1889</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g878">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--109.652533686894,47.0322664572934 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g879">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -1041,75 +857,13 @@
     <Placemark id="pm254">
       <name><![CDATA[Maine (1820)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   32161.925</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Maine</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>23</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>N Eng</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>ME</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1274923</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1284576</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          40</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          97</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          23</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Maine</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Mar. 15 1820</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1820</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1624</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1820</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g880">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--69.2342803140978,45.3894093487898 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g881">
             <altitudeMode>clampToGround</altitudeMode>
@@ -1287,75 +1041,13 @@
     <Placemark id="pm255">
       <name><![CDATA[North Dakota (1889)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   70812.056</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>North Dakota</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>38</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>ND</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      642200</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      639099</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>           9</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          99</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          39</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>North Dakota</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Nov. 2 1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1812</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1889</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g883">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--100.470755004497,47.4460775747168 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g884">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -1530,75 +1222,13 @@
     <Placemark id="pm256">
       <name><![CDATA[South Dakota (1889)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   77195.055</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>South Dakota</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>46</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>SD</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      754844</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      761023</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          10</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          99</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          40</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>South Dakota</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Nov. 2 1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1889</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1859</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1889</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g885">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--100.235288914651,44.4333181443813 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g886">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -1758,75 +1388,13 @@
     <Placemark id="pm257">
       <name><![CDATA[Wyoming (1890)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   97803.199</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Wyoming</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>56</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>WY</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      493782</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      495345</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>           5</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>         100</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          44</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Wyoming</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>July 10 1890</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1890</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1834</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1890</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g887">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--107.553081008537,42.9982837598069 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g888">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -1889,75 +1457,13 @@
     <Placemark id="pm258">
       <name><![CDATA[Wisconsin (1848)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   56088.178</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Wisconsin</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>55</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>WI</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     5363675</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     5408886</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          96</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          92</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          30</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Wisconsin</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>May 29 1848</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1848</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1766</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1848</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g889">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--90.006191227598,44.6331178864174 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g890">
             <altitudeMode>clampToGround</altitudeMode>
@@ -2251,75 +1757,13 @@
     <Placemark id="pm259">
       <name><![CDATA[Idaho (1890)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   83343.643</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Idaho</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>16</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>ID</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1293953</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1323472</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          16</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          99</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          43</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Idaho</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>July 3 1890</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1890</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1842</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1890</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g892">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--114.661865415542,44.3858954726855 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g893">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -2702,75 +2146,13 @@
     <Placemark id="pm260">
       <name><![CDATA[Vermont (1791)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    9603.272</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Vermont</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>50</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>N Eng</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>VT</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      608827</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      615035</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          63</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          94</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          14</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Vermont</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Mar. 4 1791</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1791</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1724</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1791</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g894">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--72.660656242184,44.072240587832 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g895">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -2915,75 +2297,13 @@
     <Placemark id="pm261">
       <name><![CDATA[Minnesota (1858)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    84520.49</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Minnesota</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>27</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MN</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     4919479</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     4992492</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          58</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          95</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          32</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Minnesota</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>May 11 1858</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1858</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1805</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1858</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g896">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--94.3059456842785,46.315646568988 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g897">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -3304,75 +2624,13 @@
     <Placemark id="pm262">
       <name><![CDATA[Oregon (1859)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   97073.594</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Oregon</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>41</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Pacific</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>OR</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     3421399</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     3470714</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          35</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          97</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          33</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Oregon</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Feb. 14 1859</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1859</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1811</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1859</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g898">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--120.55462738557,43.9315095486322 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g899">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -3586,75 +2844,13 @@
     <Placemark id="pm263">
       <name><![CDATA[New Hampshire (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    9259.527</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>New Hampshire</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>33</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>N Eng</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NH</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1235786</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1258315</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         133</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          88</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           9</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>New Hampshire</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>June 21 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1623</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g900">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--71.577769589032,43.6851910338169 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g901">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -3792,75 +2988,13 @@
     <Placemark id="pm264">
       <name><![CDATA[Iowa (1846)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   56257.965</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Iowa</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>19</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>IA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     2926324</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     2941287</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          52</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          95</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          29</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Iowa</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 28 1846</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1846</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1788</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1846</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g902">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--93.5010908992209,42.0759891389773 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g903">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -4123,75 +3257,13 @@
     <Placemark id="pm265">
       <name><![CDATA[Massachusetts (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    8172.561</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Massachusetts</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>25</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>N Eng</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     6349097</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     6406858</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         777</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          31</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           6</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Massachusetts</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Feb. 6 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1620</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g904">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--71.80258992883,42.2568345174596 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g905">
             <altitudeMode>clampToGround</altitudeMode>
@@ -4343,75 +3415,13 @@
     <Placemark id="pm266">
       <name><![CDATA[Nebraska (1867)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   77330.258</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Nebraska</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>31</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1711263</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1722445</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          22</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          98</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          37</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Nebraska</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Mar. 1 1867</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1867</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1823</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1867</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g908">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--99.8078006001403,41.5231582790057 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g909">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -4622,75 +3632,13 @@
     <Placemark id="pm267">
       <name><![CDATA[New York (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   48561.751</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>New York</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>36</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mid Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NY</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    18976457</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    19123358</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         391</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          65</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          11</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>New York</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>July 26 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1614</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g910">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--75.5122574227018,42.9466608265549 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g911">
             <altitudeMode>clampToGround</altitudeMode>
@@ -4946,75 +3894,13 @@
     <Placemark id="pm268">
       <name><![CDATA[Pennsylvania (1787)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   45360.118</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Pennsylvania</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>42</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mid Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>PA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    12281054</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    12295580</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         271</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          76</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           2</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Pennsylvania</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 12 1787</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1787</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1682</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1787</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g915">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--77.8028454187969,40.8748890585198 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g916">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -5183,75 +4069,13 @@
     <Placemark id="pm269">
       <name><![CDATA[Connecticut (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    4976.566</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Connecticut</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>09</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>N Eng</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>CT</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     3405565</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     3434012</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         684</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          39</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           5</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Connecticut</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 9 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1634</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g917">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--72.7247699791,41.6180326565837 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g918">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -5306,75 +4130,13 @@
     <Placemark id="pm270">
       <name><![CDATA[Rhode Island (1790)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    1044.881</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Rhode Island</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>44</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>N Eng</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>RI</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1048319</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1060126</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>        1003</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          11</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          13</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Rhode Island</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>May 29 1790</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1790</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1636</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1790</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g919">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--71.5610444257682,41.6817724921721 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g920">
             <altitudeMode>clampToGround</altitudeMode>
@@ -5450,75 +4212,13 @@
     <Placemark id="pm271">
       <name><![CDATA[New Jersey (1787)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    7507.502</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>New Jersey</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>34</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mid Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NJ</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     8414350</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     8504437</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>        1121</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>           0</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           3</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>New Jersey</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 18 1787</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1787</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1660</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1787</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g923">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--74.6766277762304,40.1983130309155 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g924">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -5659,75 +4359,13 @@
     <Placemark id="pm272">
       <name><![CDATA[Indiana (1816)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   36400.304</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Indiana</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>18</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>IN</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     6080485</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     6138368</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         167</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          85</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          19</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Indiana</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 11 1816</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1816</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1733</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1816</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g925">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--86.2761573203861,39.9127401204667 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g926">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -6006,75 +4644,13 @@
     <Placemark id="pm273">
       <name><![CDATA[Nevada (1864)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  110669.975</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Nevada</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>32</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NV</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1998257</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     2112980</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          18</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          98</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          36</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Nevada</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Oct. 31 1864</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1864</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1849</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1864</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g927">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--116.650735151808,39.3520158009473 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g928">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -6173,75 +4749,13 @@
     <Placemark id="pm274">
       <name><![CDATA[Utah (1896)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   84871.909</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Utah</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>49</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>UT</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     2233169</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     2282755</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          26</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          98</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          45</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Utah</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 4 1896</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1896</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1847</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1896</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g929">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--111.676053595522,39.3225122931614 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g930">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -6297,75 +4811,13 @@
     <Placemark id="pm275">
       <name><![CDATA[California (1850)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   157776.31</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>California</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>06</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Pacific</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>CA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    33871648</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    34516624</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         215</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          81</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          31</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>California</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Sep. 9 1850</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1850</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1769</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1850</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g931">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--119.601147078817,37.2417411000423 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g932">
             <altitudeMode>clampToGround</altitudeMode>
@@ -6696,75 +5148,13 @@
     <Placemark id="pm276">
       <name><![CDATA[Ohio (1803)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   41193.957</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Ohio</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>39</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>OH</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    11353140</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    11381725</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         276</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          75</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          17</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Ohio</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Mar. 1 1803</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1803</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1788</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1803</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g937">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--82.7873906731324,40.2875354201742 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g938">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -6992,75 +5382,13 @@
     <Placemark id="pm277">
       <name><![CDATA[Illinois (1818)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   56299.387</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Illinois</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>17</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>IL</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    12419293</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    12520522</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         221</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          80</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          21</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Illinois</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 3 1818</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1818</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1720</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1818</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g939">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--89.2037678267293,40.0640001695085 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g940">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -7401,75 +5729,13 @@
     <Placemark id="pm278">
       <name><![CDATA[Delaware (1787)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    2054.586</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Delaware</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>10</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>DE</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      783600</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      797556</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         381</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          66</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           1</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Delaware</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 7 1787</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1787</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1638</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1787</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g941">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--75.5005536711258,38.9951144260073 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g942">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -7521,75 +5787,13 @@
     <Placemark id="pm279">
       <name><![CDATA[West Virginia (1863)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   24228.552</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>West Virginia</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>54</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>WV</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1808344</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1802611</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          75</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          93</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          35</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>West Virginia</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>June 20 1863</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1863</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1727</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1863</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g943">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--80.614059565661,38.6412110051568 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g944">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -8001,75 +6205,13 @@
     <Placemark id="pm280">
       <name><![CDATA[Maryland (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>    9739.872</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Maryland</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>24</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MD</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     5296486</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     5362491</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         544</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          52</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           7</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Maryland</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Apr. 28 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1634</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g945">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--76.8193852682105,39.0640555384767 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g946">
             <altitudeMode>clampToGround</altitudeMode>
@@ -8381,75 +6523,13 @@
     <Placemark id="pm281">
       <name><![CDATA[Colorado (1876)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  104101.231</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Colorado</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>08</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>CO</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     4301261</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     4432642</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          41</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          96</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          38</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Colorado</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Aug. 1 1876</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1876</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1858</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1876</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g950">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--105.547857280633,38.9972631547834 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g951">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -8520,75 +6600,13 @@
     <Placemark id="pm282">
       <name><![CDATA[Kentucky (1792)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   40319.791</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Kentucky</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>21</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>KY</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     4041769</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     4081550</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         100</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          91</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          15</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Kentucky</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>June 1 1792</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1792</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1774</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1792</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g952">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--85.2903664199658,37.5265035728688 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g953">
             <altitudeMode>clampToGround</altitudeMode>
@@ -8973,75 +6991,13 @@
     <Placemark id="pm283">
       <name><![CDATA[Kansas (1861)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   82196.955</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Kansas</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>20</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>KS</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     2688418</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     2709422</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          33</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          97</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          34</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Kansas</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 29 1861</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1861</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1727</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1861</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g955">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--98.3832572332682,38.4826574728393 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g956">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -9180,75 +7136,13 @@
     <Placemark id="pm284">
       <name><![CDATA[Virginia (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   39819.882</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Virginia</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>51</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>VA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     7078515</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     7203904</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         178</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          84</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          10</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Virginia</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>June 25 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1607</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g957">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--78.8515944401178,37.5186355576459 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g958">
             <altitudeMode>clampToGround</altitudeMode>
@@ -9689,75 +7583,13 @@
     <Placemark id="pm285">
       <name><![CDATA[Missouri (1821)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   69832.746</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Missouri</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>29</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MO</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     5595211</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     5646796</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          80</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          93</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          24</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Missouri</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Aug. 10 1821</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1821</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1735</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1821</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g961">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--92.4801886377418,38.3639901274756 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g962">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -10108,75 +7940,13 @@
     <Placemark id="pm286">
       <name><![CDATA[Arizona (1912)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  113712.679</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Arizona</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>04</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>AZ</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     5130632</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     5312024</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          45</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          96</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          48</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Arizona</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Feb. 14 1912</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1912</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1776</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1912</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g963">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--111.664591949232,34.2916834221835 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g964">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -10344,75 +8114,13 @@
     <Placemark id="pm287">
       <name><![CDATA[Oklahoma (1907)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   70003.325</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Oklahoma</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>40</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>OK</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     3450654</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     3477711</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          49</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          96</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          46</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Oklahoma</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Nov. 16 1907</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1907</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1889</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1907</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g965">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--97.5094585942961,35.583978004302 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g966">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -10743,75 +8451,13 @@
     <Placemark id="pm288">
       <name><![CDATA[North Carolina (1789)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   49048.024</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>North Carolina</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>37</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NC</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     8049313</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     8225753</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         164</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          85</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          12</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>North Carolina</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Nov. 21 1789</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1789</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1660</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1789</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g967">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--79.4013155346895,35.5472650672799 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g968">
             <altitudeMode>clampToGround</altitudeMode>
@@ -11172,75 +8818,13 @@
     <Placemark id="pm289">
       <name><![CDATA[Tennessee (1796)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   42091.813</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Tennessee</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>47</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>TN</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     5689283</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     5773929</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         135</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          88</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          16</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Tennessee</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>June 1 1796</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1796</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1769</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1796</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g974">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--86.3340670065268,35.8467078879312 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g975">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -11505,75 +9089,13 @@
     <Placemark id="pm290">
       <name><![CDATA[Texas (1845)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  264435.873</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Texas</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>48</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>TX</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    20851820</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    21355648</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          79</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          93</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          28</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Texas</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 29 1845</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1845</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1682</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1845</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g976">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--99.3520963926805,31.4911603586956 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g977">
             <altitudeMode>clampToGround</altitudeMode>
@@ -12482,75 +10004,13 @@
     <Placemark id="pm291">
       <name><![CDATA[New Mexico (1912)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  121757.343</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>New Mexico</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>35</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Mtn</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>NM</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     1819046</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     1839139</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          15</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          99</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          47</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>New Mexico</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 6 1912</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1912</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1610</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1912</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g983">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--106.102403151381,34.4234110071301 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g984">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -12623,75 +10083,13 @@
     <Placemark id="pm292">
       <name><![CDATA[Alabama (1819)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   51715.786</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Alabama</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>01</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>AL</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     4447100</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     4478538</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          86</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          92</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          22</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Alabama</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 14 1819</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1819</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1702</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1819</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g985">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--86.8263454497332,32.7948233460272 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g986">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -12849,75 +10247,13 @@
     <Placemark id="pm293">
       <name><![CDATA[Mississippi (1817)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   47618.965</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Mississippi</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>28</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MS</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     2844658</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     2871527</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          60</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          95</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          20</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Mississippi</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Dec. 10 1817</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1817</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1699</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1817</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g987">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--89.6640053796168,32.7591641085257 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g988">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -13354,75 +10690,13 @@
     <Placemark id="pm294">
       <name><![CDATA[Georgia (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   58629.222</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Georgia</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>13</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>GA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     8186453</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     8423422</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         140</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          88</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           4</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Georgia</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 2 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1733</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g989">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--83.4542258116492,32.6550957052741 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g990">
             <altitudeMode>clampToGround</altitudeMode>
@@ -13797,75 +11071,13 @@
     <Placemark id="pm295">
       <name><![CDATA[South Carolina (1788)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   30867.398</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>South Carolina</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>45</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>SC</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     4012012</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     4077608</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         130</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          88</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>           8</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>South Carolina</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>May 23 1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1788</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1670</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1788</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g992">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--80.9010200865815,33.9187422703577 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g993">
             <altitudeMode>clampToGround</altitudeMode>
@@ -14139,75 +11351,13 @@
     <Placemark id="pm296">
       <name><![CDATA[Arkansas (1836)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   52913.232</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Arkansas</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>05</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>AR</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     2673400</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     2706444</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          51</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          96</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          25</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Arkansas</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>June 15 1836</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1836</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1686</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1836</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g995">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--92.4338014912365,34.8979530772317 
-                </coordinates>
-        </Point>
+        
         <Polygon id="g996">
           <altitudeMode>clampToGround</altitudeMode>
           <outerBoundaryIs>
@@ -14559,75 +11709,13 @@
     <Placemark id="pm297">
       <name><![CDATA[Louisiana (1812)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   45835.844</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Louisiana</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>22</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>W S Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>LA</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     4468976</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     4484853</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>          97</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          91</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          18</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Louisiana</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Apr. 30 1812</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1812</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1699</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1812</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g997">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--92.0291541159725,31.0957346447301 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g998">
             <altitudeMode>clampToGround</altitudeMode>
@@ -15226,75 +12314,13 @@
     <Placemark id="pm298">
       <name><![CDATA[Florida (1845)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   55814.731</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Florida</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>12</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>S Atl</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>FL</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>    15982378</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>    16349220</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         286</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          75</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          27</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Florida</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Mar. 3 1845</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1845</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1565</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1845</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g1002">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--82.4955741421186,28.6586764601475 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g1003">
             <altitudeMode>clampToGround</altitudeMode>
@@ -15733,75 +12759,13 @@
     <Placemark id="pm299">
       <name><![CDATA[Michigan (1837)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>   57899.398</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Michigan</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>26</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>E N Cen</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>MI</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>     9938444</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>     9997284</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>         172</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>          85</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          26</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Michigan</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 26 1837</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1837</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1668</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1837</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g1010">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--85.4386025294334,44.3365484429102 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g1011">
             <altitudeMode>clampToGround</altitudeMode>
@@ -16183,75 +13147,13 @@
     <Placemark id="pm300">
       <name><![CDATA[Alaska (1959)]]></name>
       <Snippet maxLines="0">empty</Snippet>
-      <description><![CDATA[<table cellpadding="1" cellspacing="1">
-<tr>
-<td>states.AREA:</td>
-<td>  576594.104</td>
-</tr>
-<tr>
-<td>states.STATE_NAME:</td>
-<td>Alaska</td>
-</tr>
-<tr>
-<td>states.STATE_FIPS:</td>
-<td>02</td>
-</tr>
-<tr>
-<td>states.SUB_REGION:</td>
-<td>Pacific</td>
-</tr>
-<tr>
-<td>states.STATE_ABBR:</td>
-<td>AK</td>
-</tr>
-<tr>
-<td>states.POP2000:</td>
-<td>      626932</td>
-</tr>
-<tr>
-<td>states.POP2001:</td>
-<td>      632783</td>
-</tr>
-<tr>
-<td>states.POP00_SQMI:</td>
-<td>           1</td>
-</tr>
-<tr>
-<td>states.DEN_0_100:</td>
-<td>         100</td>
-</tr>
-<tr>
-<td>USStates.ID:</td>
-<td>          49</td>
-</tr>
-<tr>
-<td>USStates.State_Name:</td>
-<td>Alaska</td>
-</tr>
-<tr>
-<td>USStates.Date_Entered:</td>
-<td>Jan. 3 1959</td>
-</tr>
-<tr>
-<td>USStates.Year_Entered:</td>
-<td>1959</td>
-</tr>
-<tr>
-<td>USStates.Year_Settled:</td>
-<td>1784</td>
-</tr>
-</table>]]></description>
+      
       <TimeSpan>
         <begin>1959</begin>
       </TimeSpan>
-      <styleUrl>#Style_5</styleUrl>
+      <styleUrl>#blue_style</styleUrl>
       <MultiGeometry>
-        <Point id="g1016">
-          <altitudeMode>clampToGround</altitudeMode>
-          <coordinates>
--152.571308132839,64.3171717929199 
-                </coordinates>
-        </Point>
+        
         <MultiGeometry>
           <Polygon id="g1017">
             <altitudeMode>clampToGround</altitudeMode>

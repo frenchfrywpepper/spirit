@@ -1,5 +1,5 @@
-(function() {
-	window.onload = function() {
+
+	var loadMapOnWindowLoad = function() {
 		var infoDiv = document.getElementById('info');
       	var zoomInLink = document.getElementById('zoomInLink');   	
 		var siteNameElem = document.getElementById('siteName');
@@ -27,7 +27,7 @@
     	var infowindow;
     	
     	var addStations = function(idx, value) {
-   			var lng = value.geometry.coordinates[0];
+    		var lng = value.geometry.coordinates[0];
    			var lat = value.geometry.coordinates[1];
    			var name = value.properties.siteName;
    			var formattedAddress = value.properties.formattedAddress;
@@ -43,7 +43,7 @@
    				position: latLng,
    				map: map,
    				title: name,
-   				icon: 'img/spiritmarkerround.png'
+   				icon: '/spirit/img/bl_sq_marker.png'
    			});
    		
    			bounds.extend(latLng);      	
@@ -86,9 +86,10 @@
 			})(infoDiv, marker);
 		}
    	
-    	$.getJSON('data/spirit.geojson', function(json) {
+    	$.getJSON('/spirit/data/spirit.geojson', function(json) {
+    	console.debug("features", json.features);
    			jQuery.each(json.features, addStations);
    			map.fitBounds(bounds);
    		});
 	}
-})();
+

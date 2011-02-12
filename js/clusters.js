@@ -1,37 +1,56 @@
 (function() {
 	window.onload = function() {
 		var stateCenters = {};
-		stateCenters['AL'] = new google.maps.LatLng(32.614361, -86.680733);
-		stateCenters['AR'] = new google.maps.LatLng(34.7519,-92.130547);
-		stateCenters['AZ'] = new google.maps.LatLng(34.167881,-111.930702);
-		stateCenters['CA'] = new google.maps.LatLng(37.271881,-119.270233);
-		stateCenters['CO'] = new google.maps.LatLng(38.997921,-105.550957);
-		stateCenters['FL'] = new google.maps.LatLng(27.9758,-81.541061);
-		stateCenters['GA'] = new google.maps.LatLng(32.67828,-83.222954);
-		stateCenters['HI'] = new google.maps.LatLng(19.59009,-155.434143);
-		stateCenters['IL'] = new google.maps.LatLng(39.739262,-89.504089);
-		stateCenters['IN'] = new google.maps.LatLng(39.766178,-86.441048);
-		stateCenters['LA'] = new google.maps.LatLng(30.974199,-91.523819);
-		stateCenters['MA'] = new google.maps.LatLng(42.184189,-71.718178);
-		stateCenters['MD'] = new google.maps.LatLng(38.823502,-75.923813);
-		stateCenters['MI'] = new google.maps.LatLng(43.742699,-84.621674);
-		stateCenters['MN'] = new google.maps.LatLng(45.262321,-69.012489);
-		stateCenters['MO'] = new google.maps.LatLng(46.679489,-110.04454);
-		stateCenters['MS'] = new google.maps.LatLng(38.2589,-92.436592);
-		stateCenters['NC'] = new google.maps.LatLng(35.21962,-80.019547);
-		stateCenters['NE'] = new google.maps.LatLng(41.500751,-99.680946);
-		stateCenters['NJ'] = new google.maps.LatLng(40.14323,-74.726707);
-		stateCenters['NV'] = new google.maps.LatLng(38.502048,-117.022583);
-		stateCenters['NY'] = new google.maps.LatLng(40.71455,-74.007124);
-		stateCenters['OH'] = new google.maps.LatLng(40.190331,-82.669472);
-		stateCenters['OR'] = new google.maps.LatLng(44.115589,-120.514839);
-		stateCenters['PA'] = new google.maps.LatLng(40.994709,-77.604538);
-		stateCenters['TN'] = new google.maps.LatLng(35.83073,-85.978737);
-		stateCenters['TX'] = new google.maps.LatLng(31.1689,-100.077148);
-		stateCenters['VA'] = new google.maps.LatLng(38.003349,-79.771271);
-		stateCenters['WA'] = new google.maps.LatLng(47.274319,-120.832718);
-		stateCenters['WI'] = new google.maps.LatLng(44.7272,-90.101257);
-		stateCenters['WY'] = new google.maps.LatLng(43.00029,-107.554047);
+		stateCenters['AL'] = new google.maps.LatLng(32.7948233460272,-86.8263454497332);
+		stateCenters['AK'] = new google.maps.LatLng(64.3171717929199,-152.571308132839);
+		stateCenters['AZ'] = new google.maps.LatLng(34.2916834221835,-111.664591949232);
+		stateCenters['AR'] = new google.maps.LatLng(34.8979530772317,-92.4338014912365);
+		stateCenters['CA'] = new google.maps.LatLng(37.2417411000423,-119.601147078817);
+		stateCenters['CO'] = new google.maps.LatLng(38.9972631547834,-105.547857280633);
+		stateCenters['CT'] = new google.maps.LatLng(41.6180326565837,-72.7247699791);
+		stateCenters['DE'] = new google.maps.LatLng(38.9951144260073,-75.5005536711258);
+		stateCenters['FL'] = new google.maps.LatLng(28.6586764601475,-82.4955741421186);
+		stateCenters['GA'] = new google.maps.LatLng(32.6550957052741,-83.4542258116492);
+		stateCenters['HI'] = new google.maps.LatLng(20.2401578536914,-156.326917860547);
+		stateCenters['ID'] = new google.maps.LatLng(44.3858954726855,-114.661865415542);
+		stateCenters['IL'] = new google.maps.LatLng(40.0640001695085,-89.2037678267293);
+		stateCenters['IN'] = new google.maps.LatLng(39.9127401204667,-86.2761573203861);
+		stateCenters['IA'] = new google.maps.LatLng(42.0759891389773,-93.5010908992209);
+		stateCenters['KS'] = new google.maps.LatLng(38.4826574728393,-98.3832572332682);
+		stateCenters['KY'] = new google.maps.LatLng(37.5265035728688,-85.2903664199658);
+		stateCenters['LA'] = new google.maps.LatLng(31.0957346447301,-92.0291541159725);
+		stateCenters['ME'] = new google.maps.LatLng(45.3894093487898,-69.2342803140978);
+		stateCenters['MD'] = new google.maps.LatLng(39.0640555384767,-76.8193852682105);
+		stateCenters['MA'] = new google.maps.LatLng(42.2568345174596,-71.80258992883);
+		stateCenters['MI'] = new google.maps.LatLng(44.3365484429102,-85.4386025294334);
+		stateCenters['MN'] = new google.maps.LatLng(46.315646568988,-94.3059456842785);
+		stateCenters['MS'] = new google.maps.LatLng(32.7591641085257,-89.6640053796168);
+		stateCenters['MO'] = new google.maps.LatLng(38.3639901274756,-92.4801886377418);
+		stateCenters['MT'] = new google.maps.LatLng(47.0322664572934,-109.652533686894);
+		stateCenters['NE'] = new google.maps.LatLng(41.5231582790057, -99.8078006001403);
+		stateCenters['NV'] = new google.maps.LatLng(39.3520158009473,-116.650735151808);
+		stateCenters['NH'] = new google.maps.LatLng(43.6851910338169, -71.577769589032);
+		stateCenters['NJ'] = new google.maps.LatLng(40.1983130309155,-74.6766277762304);
+		stateCenters['NM'] = new google.maps.LatLng(34.4234110071301,-106.102403151381);
+		stateCenters['NY'] = new google.maps.LatLng(42.9466608265549, -75.5122574227018);
+		stateCenters['NC'] = new google.maps.LatLng(35.5472650672799,-79.4013155346895);
+		stateCenters['ND'] = new google.maps.LatLng(47.4460775747168, -100.470755004497);
+		stateCenters['OH'] = new google.maps.LatLng(40.2875354201742,-82.7873906731324);
+		stateCenters['OK'] = new google.maps.LatLng(35.583978004302,-97.5094585942961);
+		stateCenters['OR'] = new google.maps.LatLng(43.9315095486322, -120.55462738557);
+		stateCenters['PA'] = new google.maps.LatLng(40.8748890585198,-77.8028454187969);
+		stateCenters['RI'] = new google.maps.LatLng(41.6817724921721,-71.5610444257682);
+		stateCenters['SC'] = new google.maps.LatLng(33.9187422703577 ,-80.9010200865815);
+		stateCenters['SD'] = new google.maps.LatLng(44.4333181443813,-100.235288914651);
+		stateCenters['TN'] = new google.maps.LatLng(35.8467078879312,-86.3340670065268);
+		stateCenters['TX'] = new google.maps.LatLng(31.4911603586956,-99.3520963926805);
+		stateCenters['UT'] = new google.maps.LatLng(39.3225122931614,-111.676053595522);
+		stateCenters['VT'] = new google.maps.LatLng(44.072240587832,-72.660656242184);
+		stateCenters['VA'] = new google.maps.LatLng(37.5186355576459,-78.8515944401178);
+		stateCenters['WA'] = new google.maps.LatLng(47.3767619529735,-120.428027450366);
+		stateCenters['WV'] = new google.maps.LatLng(38.6412110051568,-80.614059565661);
+		stateCenters['WI'] = new google.maps.LatLng(44.6331178864174,-90.006191227598);
+		stateCenters['WY'] = new google.maps.LatLng(42.9982837598069,-107.553081008537);
 		
 		var infoDiv = document.getElementById('info');
       	var siteNameElem = document.getElementById('siteName');
@@ -61,6 +80,7 @@
     	var stationMarkers = [];
     	var stateMarkers;
     	var currentState;
+    	var stateOutlinesLayer;
     	
     	var processGeoJson = function(idx, value) {
    			var lng = value.geometry.coordinates[0];
@@ -138,6 +158,11 @@
 				}
 			}
 			clearIndividualStationMarkers();
+			
+			stateOutlinesLayer = new google.maps.KmlLayer('http://pineapplestreetsoftware.com/spirit/data/us_states9.kml');
+			
+			stateOutlinesLayer.setMap(map);
+			
 			for (var i in stateMarkers) {
 				stateMarkers[i].setMap(map);
 			}
@@ -158,6 +183,7 @@
     		for(var i in stateMarkers){
     			stateMarkers[i].setMap(null);
    			}
+   			stateOutlinesLayer.setMap(null);
 		};
 		
 		function clearIndividualStationMarkers() {
@@ -170,11 +196,15 @@
    			jQuery.each(json.features, processGeoJson);
    			map.fitBounds(bounds);
    			addStateClusters();
+   			
+   			
    			google.maps.event.addListener(map, 'zoom_changed', function() {
     			if (map.getZoom() >= 6) {
     				addIndividualStationMarkers();
     			} else {
     				addStateClusters();
+    				    
+					
     			}
  			});
    		});
