@@ -1,9 +1,10 @@
 import csv
 import urllib
 import json
+import time
 
 # read spirit csv file, geocode each station and print to geojson file
-f = open("spirit.csv")
+f = open("spirit_sites_March_9_2011.csv")
 rdr = csv.reader(f, delimiter=',', quotechar='"')
 
 # file indexes
@@ -16,6 +17,7 @@ stateIdx = 5
 zipIdx = 6
 
 def geocode(address, city, state, zip):
+    time.sleep(1)
     #proxies = {'http': 'http://bcpxy.nycnet:8080'}
     proxies = {}
 

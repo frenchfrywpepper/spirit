@@ -2,6 +2,8 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="spirit">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="spirit"/>
+        <property name="java-output-path" value="/spirit/build/classes"/>
     </wb-module>
 </project-modules>
