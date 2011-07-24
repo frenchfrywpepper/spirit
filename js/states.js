@@ -157,14 +157,36 @@
 				createPolygons(geometryCollection[idx], opts);
 			}
 		}
+		
+		$.ajax({
+			type: 'GET',
+			dataType: 'jsonp',
+			url: "http://pineapplestreetsoftware.com/spirit/data/spirit.jsonp?callback=?&cache=true",
+			jsonpCallback: 'spiritCallback',
+			cache: true,
+			error: function(arg1, arg2) {
+				console.warn('an error occurred!', arg1, arg2);
+			},
+			success: function(json) {
+				jQuery.each(json.features, readSpiritStation);
+			}
+		});
 		    	
-    	$.getJSON('http://www.frenchfrieswithpepper.com/spirit.geojson?callback=$', function(json) {
-   			jQuery.each(json.features, readSpiritStation);
-   		});
+//    	$.getJSON('data/spirit.geojson', function(json) {
+//   			jQuery.each(json.features, readSpiritStation);
+//   		});
     	
-    	$.getJSON('http://www.frenchfrieswithpepper.com/us_states.geojson?callback=$',
-    	    function(json) {
-    	        jQuery.each(json.features, readState);
+		$.ajax({
+			type: 'GET',
+			dataType: 'jsonp',
+			url: "http://pineapplestreetsoftware.com/spirit/data/us_states.jsonp?callback=?&cache=true",
+			jsonpCallback: 'statesCallback',
+			cache: true,
+			error: function(arg1, arg2) {
+				console.warn('an error occurred!', arg1, arg2);
+			},
+			success: function(json) {
+				jQuery.each(json.features, readState);
    				map.fitBounds(mapBounds);
     			google.maps.event.addListener(map, 'zoom_changed', function() {
    					if (map.getZoom() >= 6) {
@@ -175,7 +197,23 @@
     					showStatePolys();
     				}
  				});
-   			}
-   		);
+			}
+		});
+		
+//    	$.getJSON('data/us_states.geojson',
+//    	    function(json) {
+//    	        jQuery.each(json.features, readState);
+//   				map.fitBounds(mapBounds);
+//    			google.maps.event.addListener(map, 'zoom_changed', function() {
+//   					if (map.getZoom() >= 6) {
+//    					hideStatePolys();
+//    					showStationMarkers();
+//    				} else {
+//    					hideStationMarkers();
+//    					showStatePolys();
+//    				}
+// 				});
+//   			}
+//   		);
 	};
 })();

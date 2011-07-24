@@ -11,37 +11,37 @@ body {
 }
 
 a:link, a:visited, a:active { 
-	color: #000; 
-	text-decoration: underline; 
+    color: #000; 
+    text-decoration: underline; 
 }
 
 a:hover  { 
-	color: #0069b9; 
-	text-decoration: underline; 
+    color: #0069b9; 
+    text-decoration: underline; 
 }
     
 #logo { 
-	float:left; 
-	margin: 0 10px 10px 0; 
+    float:left; 
+    margin: 0 10px 10px 0; 
 }
 
 #siteName, .label {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #siteName,#street,#cityState {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 #info {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 #nameAddress {
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 #addtlInfo {
-	clear: both;
-	white-space: nowrap;
+    clear: both;
+    white-space: nowrap;
 }

@@ -31,7 +31,7 @@ def geocode(address, city, state, zip):
     if status == 'OK' :
         numResults = len(response['results'])
         if numResults > 1 :
-            print "ERROR: multiple results found for " + addressString
+            print "WARN: multiple results found for " + addressString
         result = response['results'][0]
         formattedAddress = result['formatted_address']
         lat = result['geometry']['location']['lat']
@@ -72,13 +72,14 @@ for line in rdr :
         zip = line[zipIdx]
     
     geocodeResult = geocode(address, city, state, zip)
+    if geocodeResult == None :
+        continue
+
     spiritStation = {'type':'Feature'}
     spiritStation['geometry'] = {'type':'Point', 'coordinates':[geocodeResult['lng'], geocodeResult['lat']]}
     spiritStation['properties'] = {'num':num, 'licensee':licensee, 'siteName':siteName, 'address':address, 'city':city, 'state':state, 'zip':zip, 'formattedAddress':geocodeResult['formattedAddress']}
     geoJson['features'].append(spiritStation)
-        
-    rowNum += 1
 
 actualJson = json.dumps(geoJson)
-geoJsonFile = open('spirit.geojson','w')
-geoJsonFile.write(actualJson)
+geoJsonFile = open('spirit.jsonp','w')
+geoJsonFile.write('spiritCallback(' + actualJson + ');')
